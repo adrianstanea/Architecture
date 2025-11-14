@@ -74,6 +74,7 @@ void main()
 	vec4 col = mix(vec4(1.,.5,.1,1.), vec4(0.1,.5,1.,1.), p.y*.02+.4);
 	
 	fragColor = mix(vec4(0.), col, pow(glow*2.,4.));
+	fragColor.a = 1.0;
 	//fragColor = mix(vec4(1.), mix(vec4(1.,.5,.1,1.),vec4(0.1,.5,1.,1.),p.y*.02+.4), pow(glow*2.,4.));
 
 }
