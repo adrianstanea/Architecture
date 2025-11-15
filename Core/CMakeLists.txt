@@ -11,6 +11,9 @@ Source/Core/Window.h
 Source/Core/Window.cpp
 Source/Core/Layer.h
 Source/Core/Layer.cpp
+Source/Core/Event.h
+Source/Core/WindowEvents.h
+Source/Core/InputEvents.h
 Source/Core/Renderer/Renderer.h
 Source/Core/Renderer/Renderer.cpp
 Source/Core/Renderer/Shader.h
