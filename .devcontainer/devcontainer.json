@@ -1,0 +1,54 @@
+{
+    "name": "C++ Development Container",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "dev",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "aaron-bond.better-comments",
+                "adam-bender.commit-message-editor",
+                "amiralizadeh9480.cpp-helper",
+                "codezombiech.gitignore",
+                "cschlosser.doxdocgen",
+                "donjayamanne.githistory",
+                "eamodio.gitlens",
+                "GitHub.copilot",
+                "google.geminicodeassist",
+                "Gruntfuggly.todo-tree",
+                "Guyutongxue.cpp-reference",
+                "KylinIdeTeam.cmake-intellisence",
+                "KylinIdeTeam.kylin-clangd",
+                "llvm-vs-code-extensions.vscode-clangd",
+                "mhutchie.git-graph",
+                "ms-azuretools.vscode-docker",
+                "ms-vscode.cmake-tools",
+                "ms-vscode.cpptools-extension-pack",
+                "ms-vscode.cpptools-themes",
+                "ms-vscode.cpptools",
+                "redhat.vscode-yaml",
+                "twxs.cmake",
+                "xaver.clang-format",
+                "ms-vscode.hexeditor"
+            ],
+            "settings": {
+                "extensions.ignoreRecommendations": true,
+                "terminal.integrated.defaultProfile.linux": "zsh",
+                "terminal.integrated.shell.linux": "/bin/zsh",
+                // tell VSCode that you want the shell to be a login, interactive shell
+                "terminal.integrated.shellArgs.linux": [
+                    "-l",
+                    "-i"
+                ],
+                "clangd.path": "clangd",
+                "clang-format.executable": "clang-format",
+                "cmake.cmakePath": "cmake",
+                "cmake.ctestPath": "ctest",
+                "cmake.generator": "Ninja",
+                "cmake.configureOnOpen": true,
+                "lldb.executable": "/usr/bin/lldb"
+            }
+        }
+    },
+    "remoteUser": "root"
+}
