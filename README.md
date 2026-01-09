@@ -10,6 +10,21 @@ cmake ..
 ```
 from that directory. This will generate relevant project files (eg. Visual Studio for me) which you can then use to build and run.
 
+## Devcontainer(Linux/Ubuntu)
+
+Run `glxinfo -B` on the host as well as the devcontainer and extract GLX info. Then ensure we compile with the minimum between the 2.
+To update version make changes within:
+```cpp
+glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 5);
+```
+
+To run GUI apps within the Docker image, first give permission from the host with:
+```bash
+xhost +local:docker
+```
+
+
 ## Notes
 I chose to use OpenGL (and GLFW) for this due to popular demand [after running a poll](https://www.youtube.com/post/UgkxP9IU8D8UjH8szUipCS3QkJJQOc_cdb0k), however these concepts mostly translate to any other libraries/rendering APIs you may be using. OpenGL and GLFW is simply used as an example, substitute what you like.
 
